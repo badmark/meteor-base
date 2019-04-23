@@ -1,4 +1,8 @@
+
 # Base Docker Image for Meteor Apps
+## Updated to Meteor 1.8.1 - Added ability to use private NPM packages (.npmrc)
+
+### Meteor 1.8+
 
 This repo contains a base Docker image for use by [Meteor](https://www.meteor.com/) apps built using a [multistage Dockerfile](https://docs.docker.com/develop/develop-images/multistage-build/). You might want to use this base because:
 

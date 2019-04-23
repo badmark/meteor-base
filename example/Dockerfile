@@ -9,6 +9,10 @@ RUN bash $SCRIPTS_FOLDER/build-app-npm-dependencies.sh
 # Copy app source into container
 COPY ./app $APP_SOURCE_FOLDER/
 
+## If you have private npm packages uncomment line below to copy .npmrc to root folder of project
+
+# COPY ./app/.npmrc ./app $APP_SOURCE_FOLDER/
+
 RUN bash $SCRIPTS_FOLDER/build-meteor-bundle.sh
 
 
